@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda Artikel</title>
+    <script src="../js/pencarian.js"></script>
+    <link rel="stylesheet" href="../css/mystyles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .search-container {
+            margin: 20px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .artikel {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu ">
+                <li><a href="profil.html">Home</a></li><li><a href="berandablog.html">Blog</a></li><li><a href="berandaartikel.html">Artikel</a></li><li><a href="login.html">Login/Daftar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="garisbatas">
+<h1>Daftar Artikel</h1>
+    </div>
+<div class="search-container">
+<input type="text" id="inputPencarian" placeholder="Cari artikel...">
+<button onclick="cariArtikel()">Cari</button>
+<div id="daftarArtikel">
+    <p id="pesanTidakDitemukan" style="display: none;">Tidak ada artikel yang ditemukan. 😢</p>
+    <hr>
+    <div class="artikel">
+        <h2><a href="artikel/alurkerjacomputer.html"> alur kerja perangkat keras computer </a></h2>
+        <p><a href="artikel/alurkerjacomputer.html"> cara kerja perangkat computer dari power suply hingga kemonitor </a></p>
+    </div> 
+</div>
+</body>
+</html>
