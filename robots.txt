@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://blog.andhim.net/sitemap.xml
