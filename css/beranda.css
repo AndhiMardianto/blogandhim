@@ -1,0 +1,363 @@
+/* Umum */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3 {
+  margin-bottom: 0.5em;
+}
+
+/* Link dalam paragraf berkedip bersinar */
+p a {
+  color: white;
+  text-shadow: 0 0 10px #00f, 0 0 20px #00f;
+  animation: bersinar 1.5s infinite;
+}
+
+@keyframes bersinar {
+  0%, 100% {
+    text-shadow: 0 0 10px #00f, 0 0 20px #00f;
+  }
+  50% {
+    text-shadow: 0 0 5px #00f, 0 0 10px #00f;
+  }
+}
+
+main {
+  padding: 30px;
+  max-width: 100%;
+width: 100%;
+  margin: 0;
+}
+
+/* Header */
+.site-header {
+  background: linear-gradient(145deg, #1a1a1a, #2c2c2c); /* efek metalik */
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 0 15px #000; /* bayangan lembut di sekitar header */
+}
+
+/* Efek bercahaya untuk teks di header */
+.site-header h1,
+.site-header h2,
+.site-header h3 {
+  color: #ffffff;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #cccccc, 0 0 20px #888888;
+}
+
+.site-title {
+  margin: 0;
+}
+
+/* Navigasi */
+.main-nav .nav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 15px;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.nav-button {
+  background-color: #0a9396;
+  color: white;
+  border: none;
+  margin: 5px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.nav-button:hover,
+.nav-button:focus {
+  background-color: #94d2bd;
+  color: #003845;
+  outline: none;
+}
+
+
+/* Kontak */
+.icon-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.icon-container img {
+  width: 32px;
+  height: 32px;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #005f73;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+
+    .popup-menu {
+      position: fixed;
+      top: 70px;
+      right: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 10px;
+      display: none;
+      z-index: 999;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .popup-menu a {
+      display: block;
+      padding: 8px;
+      text-decoration: none;
+      color: #333;
+      border-radius: 6px;
+    }
+
+    .popup-menu a:hover {
+      background-color: #f0f0f0;
+    }
+
+    .hint {
+      margin-top: 80px;
+      font-size: 14px;
+      color: gray;
+    }
+
+/*dibawah ini kelas untuk membuat garis tebal untuk heading pembatas */ 
+.garisheading {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    font-size: 18px;
+margin: 0;
+    font-weight: strong;
+    line-height: 0;
+}
+
+/* gaya untuk filter dan pencarian */
+.filter-container {
+  background-color: #f8f8f8;
+  padding: 16px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filter-container label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+}
+
+.filter-select,
+.filter-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #000;
+}
+
+.filter-select:focus,
+.filter-input:focus {
+  border-color: #0078d4;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 120, 212, 0.3);
+}
+
+/* gaya untuk tombol bagikan ke medsos*/
+.share-btn {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.popup-share {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  left: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  padding: 15px;
+  z-index: 1000;
+}
+
+.popup-share a,
+.popup-share button {
+  display: block;
+  margin: 8px 0;
+  background: none;
+  border: none;
+  color: #007BFF;
+  text-align: left;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.popup-share a:hover,
+.popup-share button:hover {
+  text-decoration: underline;
+}
+
+/* gaya tombol aksesibilitas */
+/* mode-gelap.css */
+
+/* Gaya umum saat mode gelap aktif */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode a {
+  color: #90caf9;
+}
+
+body.dark-mode header,
+body.dark-mode nav,
+body.dark-mode footer {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode button {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+/* Aksesibilitas Popup */
+.aksesibilitas-popup {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}
+
+/* Saat mode gelap, popup juga ikut berubah */
+body.dark-mode .aksesibilitas-popup {
+  background-color: #1f1f1f;
+  border-color: #444;
+}
+
+.aksesibilitas-popup button {
+  display: block;
+  margin: 8px 0;
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
+body.dark-mode .aksesibilitas-popup button {
+  background-color: #2a2a2a;
+  border-color: #666;
+  color: #eee;
+}
+
+/*  pengaturan mode besar kecil huruf */
+:root {
+  --ukuran-teks: 100%;
+}
+
+body {
+  font-size: var(--ukuran-teks);
+}
+
+/* stelan kontras tinggi */
+/* kontras.css */
+body.kontras-tinggi {
+  background-color: black;
+  color: yellow;
+}
+
+body.kontras-tinggi a {
+  color: cyan;
+  text-decoration: underline;
+}
+
+body.kontras-tinggi button {
+  background-color: yellow;
+  color: black;
+  border: 2px solid white;
+}
+
+body.kontras-tinggi header,
+body.kontras-tinggi footer,
+body.kontras-tinggi .konten {
+  background-color: black;
+  color: yellow;
+}
+
+/* Pastikan elemen penting menyesuaikan */
+body.kontras-tinggi .site-header,
+body.kontras-tinggi .popup-share {
+  background-color: black;
+  border-color: yellow;
+}
+
+body.kontras-tinggi .popup-share a,
+body.kontras-tinggi .popup-share button {
+  color: yellow;
+}
+
+/* gaya kutipan */
+.quote-box {
+  border-left: 5px solid #4CAF50;
+  background-color: #f9f9f9;
+  padding: 16px 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  font-style: italic;
+  color: #333;
+  font-family: 'Georgia', serif;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.quote-box p {
+  margin: 0 0 10px 0;
+  line-height: 1.6;
+}
+
+.quote-box p:last-child {
+  margin-bottom: 0;
+}
+

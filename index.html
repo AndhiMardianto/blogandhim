@@ -1,41 +1,129 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beranda Artikel</title>
-    <script src="../js/pencarian.js"></script>
-    <link rel="stylesheet" href="../css/mystyles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .search-container {
-            margin: 20px;
-        }
-        input[type="text"] {
-            padding: 10px;
-            width: 300px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        button {
-            padding: 10px 15px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .artikel {
-            margin: 20px 0;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>Beranda Blog Andhim - Kumpulan Artikel Teknologi & Lain lain</title>
+  <meta name="description" content="Selamat datang di Blog Andhim! Temukan artikel-artikel seputar teknologi, tutorial komputer, dan lain lain yang dikurasi dengan bahasa ringan dan informatif." />
+  <meta name="keywords" content="blog andhim, pemrograman, teknologi, tutorial komputer, andhi mardianto" />
+  <meta name="author" content="Andhim" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://blog.andhim.net/" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Blog Andhim",
+    "url": "https://blog.andhim.net/",
+    "description": "Blog Andhim menyajikan artikel seputar teknologi, dan tutorial komputer dengan bahasa ringan dan informatif.",
+    "publisher": {
+      "@type": "Person",
+      "name": "Andhim"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://blog.andhim.net/"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/beranda.css" />
+  <script src="js/script.js" defer></script>
+<link rel="icon" href="media/favicon.png" type="image/png">
+
 </head>
+
 <body>
-    halaman sedang dalam pengerjaan 
+  <header class="site-header">
+    <h1 class="site-title">Beranda Blog Andhim</h1>
+    <nav class="main-nav">
+      <ul class="nav-list">
+<li><button class="nav-button" onclick="toggleMenu()" aria-label="Menu Andhim">
+    ☰ Menu
+  </button></li>
+        <li><button class="nav-button" onclick="alert('Fitur ini sedang dalam pengerjaan')">Zona Andhim</button></li>
+        <li><button class="nav-button" onclick="location.href='tentang'">Tentang Blog</button></li>
+<li> <button id="aksesibilitasToggle" aria-haspopup="true" aria-controls="menuAkses">Menu Aksesibilitas</button></li>
+      </ul>
+  <div class="popup-menu" id="popupMenu" tabindex="-1" aria-label="Menu Navigasi Utama">
+    <a href="https://andhim.net">andhim.net</a>
+    <a href="https://andhim.net/proyek/">Proyek</a>
+<a href="#" onclick="alert('Fitur sedang dalam pengerjaan'); return false;">Zona Andhim</a>
+  </div>
+
+<div id="menuAkses" class="aksesibilitas-popup" role="dialog" aria-modal="true" hidden tabindex="-1">
+  <button id="bacaHalaman">🔊 Baca Halaman</button>
+  <button id="modeGelapToggle">Mode Gelap</button>
+  <button id="perbesarTeks"> Perbesar Teks</button>
+  <button id="kecilkanTeks">Kecilkan Teks</button>
+<button id="kontrasToggle">Kontras Tinggi</button>
+  <button id="tutupAkses">❌ Tutup Menu</button>
+</div>
+
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="intro">
+      <h2>👋 Selamat datang di Blog Andhim!</h2>
+      <p>
+        Blog sederhana ini adalah tempat dimana jejak hidup bersatu jadi tulisan santai penuh makna<br>
+Dibangun  dengan semangat aksessibilitas yang membara,  blog ini terbuka untuk semua kalangan termasuk kamu yang tak sengaja nyasar sampai kesini.😅<br>
+        Selamat membaca, semoga betah ya! 😄
+        </p>
+    </section>
+<div class="garisheading">
+  <h3>Filter Postingan</h3>
+</div>
+<div class="filter-container">
+  <label for="categoryFilter">Kategori:</label>
+  <select id="categoryFilter" class="filter-select">
+    <option value="semua">Semua</option>
+    <option value="tutorial">Tutorial</option>
+    <option value="teknologi">Teknologi</option>
+    <option value="sosial">Sosial</option>
+  </select>
+
+  <label for="searchInput">Cari:</label>
+  <input type="text" id="searchInput" class="filter-input" placeholder="Cari judul..." />
+</div>
+
+    <section class="post-list">
+      <div class="garisheading">
+        <h3>Daftar Postingan</h3>
+      </div>
+    <div id="posts-container">
+      <!-- Postingan akan muncul otomatis lewat JavaScript -->
+    </div>
+
+    </section>
+
+    <hr />
+<h3>Langganan RSS</h3>
+<p>Masukan email dan tunggu email konfirmasi di kotak masuk</p>
+<script async src="https://eocampaign1.com/form/ab7e95da-18d8-11f0-8819-096433fa89ca.js" data-form="ab7e95da-18d8-11f0-8819-096433fa89ca"></script>
+  
+    <section class="contacts">
+      <h3>Kontak</h3>
+      <div class="icon-container">
+        <a href="https://wa.me/6281268480808"><img src="media/iconwa.svg" alt="Whatsapp" /></a>
+
+        <a href="mailto:andhi@andhim.net"><img src="media/iconemail.svg" alt="Email" /></a>
+        <a href="https://www.facebook.com/"><img src="media/iconfb.svg" alt="Facebook" /></a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>Copyright <span id="year"></span> Andhim All rights reserved.</p>
+  </footer>
 </body>
 </html>
