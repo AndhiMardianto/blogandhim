@@ -361,3 +361,36 @@ body.kontras-tinggi .popup-share button {
   margin-bottom: 0;
 }
 
+/* gaya untuk banner*/
+.banner-andhim {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.banner-andhim img {
+  width: 100%;
+  max-height: 300px; /* batasi tinggi maksimal */
+  object-fit: cover; /* potong pinggir gambar agar tetap rapi */
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* gaya untuk gambar postingan */
+.gambar-postingan {
+  text-align: center;         /* Biar gambar ada di tengah */
+  margin: 1.5em 0;            /* Ruang atas & bawah gambar */
+}
+
+.gambar-postingan img {
+  max-width: 100%;            /* Supaya gambar responsif */
+  height: auto;               /* Otomatis jaga rasio */
+  border-radius: 8px;         /* Opsional: sudut membulat */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Opsional: bayangan halus */
+}
