@@ -384,13 +384,38 @@ body.kontras-tinggi .popup-share button {
 
 /* gaya untuk gambar postingan */
 .gambar-postingan {
-  text-align: center;         /* Biar gambar ada di tengah */
-  margin: 1.5em 0;            /* Ruang atas & bawah gambar */
+  text-align: center;
+  margin: 1.5em 0;
 }
 
 .gambar-postingan img {
-  max-width: 100%;            /* Supaya gambar responsif */
-  height: auto;               /* Otomatis jaga rasio */
-  border-radius: 8px;         /* Opsional: sudut membulat */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Opsional: bayangan halus */
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Batasi ukuran gambar di layar lebar */
+@media (min-width: 768px) {
+  .gambar-postingan img {
+    max-width: 50%;
+  }
+}
+
+/* gaya untuk video */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Rasio 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
