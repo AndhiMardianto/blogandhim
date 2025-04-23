@@ -38,26 +38,6 @@ width: 100%;
   margin: 0;
 }
 
-/* Header */
-.site-header {
-  background: linear-gradient(145deg, #1a1a1a, #2c2c2c); /* efek metalik */
-  color: #ffffff;
-  padding: 20px 0;
-  text-align: center;
-  box-shadow: 0 0 15px #000; /* bayangan lembut di sekitar header */
-}
-
-/* Efek bercahaya untuk teks di header */
-.site-header h1,
-.site-header h2,
-.site-header h3 {
-  color: #ffffff;
-  text-shadow: 0 0 5px #ffffff, 0 0 10px #cccccc, 0 0 20px #888888;
-}
-
-.site-title {
-  margin: 0;
-}
 
 /* Navigasi */
 .main-nav .nav-list {
