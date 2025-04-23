@@ -4,6 +4,7 @@ body {
   margin: 0;
   color: #333;
   line-height: 1.6;
+  background-color: #f8f8f8;
 }
 
 a {
@@ -31,12 +32,32 @@ p a {
   }
 }
 
+/* Bagian utama konten */
 main {
-  padding: 30px;
-  max-width: 100%;
-width: 100%;
-  margin: 0;
+  padding: 20px 30px; 
+  max-width: 1200px;   /* Lebar maksimal di layar besar */
+  margin: 0 auto;      /* Posisi di tengah */
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
+
+/* Responsif: tampilan tablet dan ponsel */
+@media (max-width: 768px) {
+  main {
+    padding: 15px 20px;
+    max-width: 100%;
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 10px 15px;
+    margin: 0 5px;
+  }
+}
+
+
 
 
 /* Navigasi utama */
