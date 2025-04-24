@@ -36,10 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const postsContainer = document.getElementById("posts-container");
   let allPosts = [];
 
-  // Tambahkan cache buster ke URL JSON
   const jsonUrl = "data/posts.json?v=" + new Date().getTime();
 
-  // Ambil data dari posts.json
   fetch(jsonUrl)
     .then(response => response.json())
     .then(data => {
@@ -51,7 +49,6 @@ document.addEventListener("DOMContentLoaded", function () {
       console.error("Error memuat JSON:", error);
     });
 
-  // Tampilkan semua postingan dan dikelompokkan per kategori
   function tampilkanPostingan(posts) {
     postsContainer.innerHTML = "";
 
@@ -80,10 +77,15 @@ document.addEventListener("DOMContentLoaded", function () {
         div.className = "post";
 
         div.innerHTML = `
-          <h4>${post.title}</h4>
-          <p>${post.penulis}</p>
-          <p>${post.content}</p>
-          <p><a href="${post.url}" target="_blank" class="read-more">Baca selengkapnya</a></p>
+          <div class="post-item">
+            <img src="${post.thumbnail}" alt="${post.title}" class="thumbnail">
+            <div class="post-content">
+              <h4>${post.title}</h4>
+              <p>${post.penulis}</p>
+              <p>${post.content}</p>
+              <p><a href="${post.url}" target="_blank" class="read-more">Baca selengkapnya</a></p>
+            </div>
+          </div>
         `;
 
         postsContainer.appendChild(div);
@@ -91,7 +93,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Filter ketika input berubah
   categoryFilter.addEventListener("change", filterDanCari);
   searchInput.addEventListener("input", filterDanCari);
 
@@ -109,6 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
     tampilkanPostingan(hasilFilter);
   }
 });
+
 
 // fungsi baca halaman 
 document.addEventListener("DOMContentLoaded", function () {

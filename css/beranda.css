@@ -223,6 +223,42 @@ main {
   box-shadow: 0 0 0 3px rgba(0, 120, 212, 0.3);
 }
 
+/* gaya untuk daftar postingan di beranda*/
+.post-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 16px;
+}
+
+.thumbnail {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.post-content {
+  flex: 1;
+}
+
+.post-content h4 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.read-more {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
 /* gaya untuk tombol bagikan ke medsos*/
 .share-btn {
   padding: 10px 20px;
