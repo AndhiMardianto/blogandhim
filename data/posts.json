@@ -1,18 +1,18 @@
 [
-    {
-      "category": "Kategori Teknologi",
-      "title": "Apakah nulis diblog masih relevan di era AI?",
-      "content": "yes, Menurutku di era AI, blog tetap masih relevan. Justru, blogger yang mampu memanfaatkan AI sebagai alat bantu untuk meningkatkan kualitas dan efisiensi akan memiliki keunggulan tersendiri. ",
-      "penulis": "Ditulis Oleh Andhim",
-      "url": "teknologi/apakah-masih-relevan-nulis-blog-di-era-AI/"
-    },
-    {
-      "category": "Kategori Teknologi",
-      "title": "Selamat datang di MIRC dunia chat klasik yang belum mati",
-      "content": "🤔 Sekarang Masih Ada?Masih! Tapi udah jarang yang pakai. mIRC sekarang dipakai buat hal-hal khusus kayak chatting komunitas linux, python, anime, bot monitoring, atau sekedar ingin nostalgia. dan bahkan bisa jalan mulus di Windows 10 atau 11.",
-      "penulis": "Ditulis Oleh Andhim",
-      "url": "teknologi/MIRC-dunia-chat-klasik-yang-belum-mati/"
-    }
-
-  ]
-  
+  {
+    "category": "Kategori Teknologi",
+    "title": "Apakah nulis diblog masih relevan di era AI?",
+    "content": "yes, Menurutku di era AI, blog tetap masih relevan. Justru, blogger yang mampu memanfaatkan AI sebagai alat bantu untuk meningkatkan kualitas dan efisiensi akan memiliki keunggulan tersendiri.",
+    "penulis": "Ditulis Oleh Andhim",
+    "url": "teknologi/apakah-masih-relevan-nulis-blog-di-era-AI/",
+    "thumbnail": "../../imagesog/ngeblog-era-ai.webp"
+  },
+  {
+    "category": "Kategori Teknologi",
+    "title": "Selamat datang di MIRC dunia chat klasik yang belum mati",
+    "content": "🤔 Sekarang Masih Ada? Masih! Tapi udah jarang yang pakai. mIRC sekarang dipakai buat hal-hal khusus kayak chatting komunitas linux, python, anime, bot monitoring, atau sekedar ingin nostalgia.",
+    "penulis": "Ditulis Oleh Andhim",
+    "url": "teknologi/MIRC-dunia-chat-klasik-yang-belum-mati/",
+    "thumbnail": "../../imagesog/irc-nostalgia.webp"
+  }
+]

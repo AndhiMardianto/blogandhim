@@ -314,3 +314,63 @@ document.addEventListener("DOMContentLoaded", function () {
     thread.dataset.pageTitle = document.title;
   }
 });
+
+// fungsi rekomendasi postingan
+document.addEventListener("DOMContentLoaded", function () {
+  const recommendationContainer = document.getElementById("recommendation-list");
+
+  fetch("../../data/posts.json")
+    .then((res) => res.json())
+    .then((posts) => {
+      const currentPath = window.location.pathname;
+
+      const recommendedPosts = posts
+        .filter(post => !currentPath.includes(post.url))
+        .slice(0, 5); // Ambil 5 postingan terbaru
+
+      recommendedPosts.forEach(post => {
+        const wrapper = document.createElement("div");
+        wrapper.style.display = "flex";
+        wrapper.style.gap = "1em";
+        wrapper.style.marginBottom = "1.5em";
+        wrapper.style.alignItems = "flex-start";
+
+        const img = document.createElement("img");
+        img.src = post.thumbnail || "/img/default-thumb.jpg";
+        img.alt = post.title;
+        img.style.width = "120px";
+        img.style.height = "auto";
+        img.style.borderRadius = "8px";
+
+        const textWrapper = document.createElement("div");
+
+        const link = document.createElement("a");
+        link.href = `/${post.url}`;
+        link.textContent = post.title;
+        link.style.fontWeight = "bold";
+        link.style.textDecoration = "none";
+        link.style.color = "#000";
+        link.style.display = "block";
+        link.style.marginBottom = "0.3em";
+
+        const snippet = document.createElement("p");
+        snippet.textContent = post.content.slice(0, 100) + "...";
+        snippet.style.margin = "0";
+        snippet.style.color = "#555";
+        snippet.style.fontSize = "0.95em";
+
+        textWrapper.appendChild(link);
+        textWrapper.appendChild(snippet);
+
+        wrapper.appendChild(img);
+        wrapper.appendChild(textWrapper);
+
+        recommendationContainer.appendChild(wrapper);
+      });
+    })
+    .catch((err) => {
+      console.error("Gagal memuat rekomendasi:", err);
+    });
+});
+
+
