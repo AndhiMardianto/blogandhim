@@ -1,6 +1,15 @@
 [
   {
     "category": "Kategori Teknologi",
+    "title": "Daftar game sepakbola online berbasis text.",
+    "content": "Jika bertindak sebagai pemain, hal yang harus di lakukan adalah menemukan tim yang bersedia mengontrak anda, sembari mengikuti latihan untuk meningkatkan keterampilan sesuai posisinya di lapangan.",
+    "penulis": "Ditulis Oleh Agoez Ghele",
+    "url": "teknologi/daftar-game-sepak-bola-online-berbasis-text/",
+    "thumbnail": "../../imagesog/daftargame.webp"
+  },
+
+  {
+    "category": "Kategori Teknologi",
     "title": "Apakah nulis diblog masih relevan di era AI?",
     "content": "yes, Menurutku di era AI, blog tetap masih relevan. Justru, blogger yang mampu memanfaatkan AI sebagai alat bantu untuk meningkatkan kualitas dan efisiensi akan memiliki keunggulan tersendiri.",
     "penulis": "Ditulis Oleh Andhim",
@@ -15,4 +24,5 @@
     "url": "teknologi/MIRC-dunia-chat-klasik-yang-belum-mati/",
     "thumbnail": "../../imagesog/irc-nostalgia.webp"
   }
+
 ]
