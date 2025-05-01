@@ -65,6 +65,8 @@
   </button></li>
 
         <li><button class="nav-button" onclick="location.href='../../'">Beranda Blog</button></li>
+  <li><button class="nav-button" id="translateRedirectBtn">Translate</button></li>
+
         <li><button class="nav-button" onclick="alert('Fitur ini sedang dalam pengerjaan')">Zona Andhim</button></li>
         <li><button class="nav-button" onclick="location.href='../../tentang/'">Tentang Blog</button></li>
 <li> <button class="nav-button" id="aksesibilitasToggle" aria-haspopup="true" aria-controls="menuAkses">Menu Aksesibilitas</button></li>
@@ -187,5 +189,14 @@ Jangan remehkan mereka yang tak melihat dunia dengan mata, sebab mereka bisa mel
   <footer class="site-footer">
     <p>Copyright <span id="year"></span> Andhim  All rights reserved.</p>
   </footer>
+  <script>
+    document.getElementById('translateRedirectBtn').addEventListener('click', () => {
+      const userLang = navigator.language.split('-')[0] || 'en'; // 'en', 'id', 'fr', dll
+      const currentURL = window.location.href;
+
+      const redirectURL = `https://translate.google.com/translate?hl=${userLang}&sl=id&u=${encodeURIComponent(currentURL)}`;
+      window.location.href = redirectURL;
+    });
+  </script>
 </body>
 </html>
