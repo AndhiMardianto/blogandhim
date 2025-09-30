@@ -1,5 +1,5 @@
 [
-  {
+    {
     "category": "Kategori Teknologi",
     "title": "Daftar game sepakbola online berbasis text.",
     "content": "Jika bertindak sebagai pemain, hal yang harus di lakukan adalah menemukan tim yang bersedia mengontrak anda, sembari mengikuti latihan untuk meningkatkan keterampilan sesuai posisinya di lapangan.",
@@ -23,6 +23,14 @@
     "penulis": "Ditulis Oleh Andhi Mardianto (Andhim)",
     "url": "teknologi/MIRC-dunia-chat-klasik-yang-belum-mati/",
     "thumbnail": "../../imagesog/irc-nostalgia.webp"
+  },
+  {
+    "category": "Kategori Refleksi",
+    "title": "Mengetuk Pintu Kenangan Yang Ditutup",
+    "content": "Meski begitu, saya tidak benar-benar kehilangan dirinya. Suaranya  tetap hidup di telinga saya. Ia seorang penyiar radio, ",
+    "penulis": "Ditulis Oleh Andhi Mardianto (Andhim)",
+    "url": "mengetuk-pintu-kenangan-yang-ditutup/",
+    "thumbnail": "../../imagesog/pintuyangditutup.jpg"
   }
 
 ]
